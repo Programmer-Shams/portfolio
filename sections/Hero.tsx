@@ -4,32 +4,30 @@ import Header from "../components/Header";
 import Button from "../components/Button";
 import { GoDownload } from "react-icons/go";
 import { FiDownload } from "react-icons/fi";
+import Navbar from "@/components/Navbar/Navbar";
 
 const Hero = () => {
   return (
-    <div className="bg-bg-hero w-full h-screen bg-no-repeat bg-cover mb-[-3rem]">
-      <div className="absolute mt-8">
-        <Header />
-      </div>
-      <div className="absolute ml-[38%] mt-[13%] items-center justify-center">
+    <div className="bg-bg-hero w-[630px] lg:w-full border-2 border-blue-500 h-screen lg:h-[47rem] bg-cover bg-no-repeat">
+      <div className="flex flex-col items-center justify-center mt-64 lg:mt-44">
         <Image
           src="/assets/images/shams.jpg"
           alt="shams"
           width={220}
           height={220}
-          className="rounded-full border-4 border-white items-center justify-center ml-16"
+          className="rounded-full border-4 border-white"
         />
-        <h1 className="text-white text-3xl font-bold mt-5">
-          Here I'm Programmer Shams{" "}
+        <h1 className="text-white text-4xl lg:text-3xl font-bold mt-5 text-center">
+          Here I'm Programmer <br /> Shams{" "}
         </h1>
-        <p className="text-white text-center mt-3 text-lg">
+        <p className="text-white text-center mt-3 text-2xl lg:text-lg">
           I'm a Passionate{" "}
           <span className="text-secondary">Software Developer</span>
         </p>
       </div>
-      <div className="absolute ml-[40%] mt-[37%] items-center justify-center flex flex-row gap-3">
-        <Button width="120" BtnText="Hire Me" />
-        <Button width="170" BtnText="Download CV" BtnIcon={<FiDownload />} />
+      <div className="flex flex-row justify-center items-center gap-4 mt-10">
+        <Button width="150" BtnText="Hire Me" />
+        <Button width="218" BtnText="Download CV" BtnIcon={<FiDownload />} />
       </div>
     </div>
   );

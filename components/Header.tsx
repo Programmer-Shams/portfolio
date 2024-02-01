@@ -15,7 +15,7 @@ const Header = () => {
         {NavLinks.map((link) => {
           const isActive = pathname === link.id
           return (
-            <Link href={`#${link.id}`} key={link.name} className={`${isActive ? 'text-secondary' : 'text-white'} font-medium text-[15px]`}>
+            <Link href={`#${link.id}`} key={link.name} className="app__flex p-text">
               {link.name}
             </Link>
           )

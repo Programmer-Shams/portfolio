@@ -20,7 +20,7 @@ const Skills = () => {
           </h1>
         </div>
 
-        <div className="w-[70%] ml-[20rem] flex items-center gap-10 flex-wrap">
+        {/* <div className="w-[70%] ml-[20rem] flex items-center gap-10 flex-wrap">
           {SkillsInfo.map((skill, i) => (
             <SkillsCard
               key={i}
@@ -29,7 +29,7 @@ const Skills = () => {
               BoxText={skill.name}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

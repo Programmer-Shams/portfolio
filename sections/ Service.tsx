@@ -8,16 +8,16 @@ import Info from "@/components/Info";
 
 const Service = () => {
   return (
-    <section className="bg-bg_secondary w-full h-[120vh] pt-10" id="service">
-      <Info />
+    <section className="bg-bg_secondary w-[630px] lg:w-full lg:h-[120vh] h-[310vh] pt-10" id="service">
+      <div className="lg:flex justify-center items-center"><Info /></div>
       <div className="mt-14">
-        <h1 className="text-3xl text-center font-[600]">Awesome Service</h1>
-        <p className="text-textColor mt-5 text-center">
+        <h1 className="text-3xl text-center font-[600] ">Awesome Service</h1>
+        <p className="text-textColor mt-5 text-center text-xl px-3">
           Obviously I'm a Front-End Developer. Experienced with all stages of
-          the development <br /> cycle for dynamic web projects.
+          the development cycle for dynamic web projects.
         </p>
       </div>
-      <div className="flex flex-row gap-5 m-5 mt-10 justify-center">
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-5">
         {ServicesInfo.map((service) => (
           <ServiceCard
             key={service.name}
