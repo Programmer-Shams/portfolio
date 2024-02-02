@@ -2,7 +2,7 @@ import React from 'react'
 
 const Info = () => {
   return (
-    <div className="bg-white -mt-[180px] lg:-mt-[130px] border-2 border-blue-600 w-[570px] h-[570px] lg:h-[220px] ml-7 lg:w-[80rem] rounded-xl px-6 shadow-lg flex flex-col lg:flex-row gap-6  justify-center">
+    <div className="bg-white -mt-[180px] lg:-mt-[130px] w-[570px] h-[570px] lg:h-[220px] ml-7 lg:w-[80rem] rounded-xl px-6 shadow-lg flex flex-col lg:flex-row gap-6  justify-center">
       
     <div className="bg-bg_secondary rounded-xl p-4 border-2 lg:w-[450px] text-[15px] flex-col gap-3 lg:h-[180px] lg:mt-3">
       <h1 className="font-[550] text-2xl lg:text-lg py-2 lg:py-1">Personal Details</h1>

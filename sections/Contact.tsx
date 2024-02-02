@@ -34,24 +34,24 @@ const Contact = () => {
     // });
   };
   return (
-    <section className="bg-white h-[100vh]" id="contact">
+    <section className="bg-white h-[110vh] w-[500px] lg:w-full lg:h-[120vh] ml-[4rem] lg:ml-0 pt-10" id="contact">
       <h1 className="text-3xl text-center font-[600] mt-10">Contact Me</h1>
-      <p className="text-textColor mt-5 text-base text-center leading-[30px]">
+      <p className="text-textColor mt-5 text-2xl lg:text-base text-center leading-[30px]">
         Have a question or want to work together?
       </p>
-      <h2 className="text-3xl text-center font-[600] text-secondary">
+      <h2 className="text-3xl text-center mt-3 font-[600] text-secondary">
         Let's Make It Happen!
       </h2>
       <div className="items-center justify-center flex flex-col">
         <div className="app__footer-cards">
           <div className="app__footer-card">
-            <a href="mailto:ssdeen313@gmail.com" className="p-text flex justify-center items-center gap-4">
-              <MdMarkEmailRead className=" text-secondary text-2xl" /> ssdeen313@gmail.com 
+            <a href="mailto:ssdeen313@gmail.com" className="text-xl lg:text-base flex justify-center items-center gap-4">
+              <MdMarkEmailRead className=" text-secondary lg:text-xl text-3xl" /> ssdeen313@gmail.com 
             </a>
           </div>
           <div className="app__footer-card">
-            <a href="tel: +234 (9011855909)" className="p-text flex justify-center items-center gap-4">
-              <FiPhoneCall className="text-secondary text-2xl" /> +(234) 9011855909 
+            <a href="tel: +234 (9011855909)" className="text-xl lg:text-base flex justify-center items-center gap-4">
+              <FiPhoneCall className="text-secondary lg:text-xl text-3xl" /> +(234) 9011855909 
             </a>
           </div>
         </div>
@@ -60,7 +60,7 @@ const Contact = () => {
           <div className="app__footer-form app__flex">
             <div className="app__flex">
               <input
-                className="p-text"
+                className="text-xl lg:text-base"
                 type="text"
                 placeholder="Your Name"
                 name="name"
@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
             <div className="app__flex">
               <input
-                className="p-text"
+                className="text-xl lg:text-base"
                 type="email"
                 placeholder="Your Email"
                 name="email"
@@ -80,14 +80,14 @@ const Contact = () => {
             </div>
             <div>
               <textarea
-                className="p-text"
+                className="text-xl lg:text-base"
                 placeholder="Your Message"
                 value={message}
                 name="message"
                 onChange={handleChangeInput}
               />
             </div>
-            <button type="button" className="bg-secondary rounded-md flex items-center gap-3" onClick={handleSubmit}>
+            <button type="button" className="bg-secondary rounded-md flex items-center text-xl lg:text-base gap-3" onClick={handleSubmit}>
               {!loading ? "Send Message" : "Sending..."} <FiSend />
             </button>
           </div>

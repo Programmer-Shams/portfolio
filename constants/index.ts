@@ -11,24 +11,24 @@ import { RiTwitterXFill } from "react-icons/ri";
 export const NavLinks = [
   {
     name: "HOME",
-    id: "/",
+    link: "home",
   },
   {
     name: "SERVICES",
-    id: "service",
+    link: "service",
   },
 
   {
     name: "RESUME",
-    id: "resume",
+    link: "resume",
   },
   {
     name: "PROJECTS",
-    id: "projects",
+    link: "projects",
   },
   {
     name: "CONTACT",
-    id: "contact",
+    link: "contact",
   },
 ];
 
@@ -199,7 +199,7 @@ export const ProjectInfo = [
 
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/eventapp.png",
     description:
       "A web application for event organizers to manage their events and attendees. It has a dashboard where the organizer can see the list of events and attendees. The organizer can create, update, and delete events. The organizer can also see the list of attendees for each event and can also download the list of attendees in CSV format.",
     github: "https://github.com/Programmer-Shams/project_event_organiser-App",
@@ -220,7 +220,7 @@ export const ProjectInfo = [
   },
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/eventapp.png",
     description:
       "A web application for event organizers to manage their events and attendees. It has a dashboard where the organizer can see the list of events and attendees. The organizer can create, update, and delete events. The organizer can also see the list of attendees for each event and can also download the list of attendees in CSV format.",
     githubUrl:
@@ -242,7 +242,7 @@ export const ProjectInfo = [
   },
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/eventapp.png",
     description:
       "A web application for event organizers to manage their events and attendees. It has a dashboard where the organizer can see the list of events and attendees. The organizer can create, update, and delete events. The organizer can also see the list of attendees for each event and can also download the list of attendees in CSV format.",
     github: "https://github.com/Programmer-Shams/project_event_organiser-App",
@@ -256,7 +256,7 @@ export const ProjectInfo = [
   },
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/eventapp.png",
     description:
       "A web application for event organizers to manage their events and attendees. It has a dashboard where the organizer can see the list of events and attendees. The organizer can create, update, and delete events. The organizer can also see the list of attendees for each event and can also download the list of attendees in CSV format.",
     github: "https://github.com/Programmer-Shams/project_event_organiser-App",
@@ -270,7 +270,7 @@ export const ProjectInfo = [
   },
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/eventapp.png",
     description:
       "A web application for event organizers to manage their events and attendees. It has a dashboard where the organizer can see the list of events and attendees. The organizer can create, update, and delete events. The organizer can also see the list of attendees for each event and can also download the list of attendees in CSV format.",
     github: "https://github.com/Programmer-Shams/project_event_organiser-App",
@@ -284,7 +284,7 @@ export const ProjectInfo = [
   },
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/eventapp.png",
     description:
       "A web application for event organizers to manage their events and attendees. It has a dashboard where the organizer can see the list of events and attendees. The organizer can create, update, and delete events. The organizer can also see the list of attendees for each event and can also download the list of attendees in CSV format.",
     github: "https://github.com/Programmer-Shams/project_event_organiser-App",
@@ -298,7 +298,7 @@ export const ProjectInfo = [
   },
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/eventapp.png",
     description:
       "A web application for event organizers to manage their events and attendees. It has a dashboard where the organizer can see the list of events and attendees. The organizer can create, update, and delete events. The organizer can also see the list of attendees for each event and can also download the list of attendees in CSV format.",
     github: "https://github.com/Programmer-Shams/project_event_organiser-App",

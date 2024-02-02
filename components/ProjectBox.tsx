@@ -47,14 +47,14 @@ const ProjectBox = ({
   };
   return (
     <section>
-      <div className="rounded-xl w-[300px] h-[300px]  bg-white p-2 shadow-2xl">
+      <div className="rounded-xl lg:w-[300px] lg:h-[300px] w-[550px] h-[500px] bg-white p-3 shadow-xl">
         <div className="flex items-center justify-center mt-3">
-          <Image src={imgUrl} alt="projectimage" width={260} height={280} />
+          <Image src={imgUrl} alt="projectimage" width={260} height={280} className="w-[500px] h-[310px] lg:w-[260px] lg:h-[160px]" />
         </div>
-        <p className="font-bold p-2 text-lg">{name}</p>
+        <p className="font-bold p-2 text-3xl lg:text-lg">{name}</p>
         <div className="flex flex-row justify-between p-2 mt-5 items-center">
           <button
-            className="bg-secondary text-white w-[85px] h-[30px] rounded-lg font-bold flex flex-row items-center justify-center gap-1 px-5 cursor-pointer"
+            className="bg-secondary text-white w-[120px] h-[50px] lg:w-[85px] lg:h-[30px] text-[1.7rem] rounded-lg font-bold items-center justify-center flex text-3xl lg:text-base px-5 cursor-pointer"
             onClick={handleOpenProject}
           >
             Explore 
@@ -68,7 +68,7 @@ const ProjectBox = ({
                 width={25}
                 height={25}
                 alt="iconimage"
-                className="rounded-full h-[18px] w-[20px]"
+                className="rounded-full lg:h-[18px] lg:w-[20px] h-[30px] w-[30px]"
               />
             ))}
           </div>

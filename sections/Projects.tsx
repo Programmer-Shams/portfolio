@@ -18,16 +18,17 @@ const Projects = () => {
   }
 
   return (
-    <section className="bg-bg_secondary w-full h-[120vh]" id="projects">
+    <section className="bg-bg_secondary w-[630px] lg:w-full lg:h-[130vh] h-[300rem] pt-10" id="projects">
       <div className="pt-10">
         <h1 className="text-3xl text-center font-[600]">
           My Creative <span className="text-secondary">Portfolio</span>
         </h1>
-        <p className="text-textColor mt-5 text-base text-center leading-[30px]">
+        <p className="text-textColor mt-5 text-2xl lg:text-base text-center leading-[30px]">
           Explore My Popular Projects
         </p>
 
-        <div className="flex flex-row items-center justify-center gap-5 mt-6">
+        <div className="w-full  flex items-center justify-center">
+        <div className="flex flex-row flex-wrap  items-center justify-center gap-5 mt-6 w-[70%] lg:w-full">
           {[ "All", "Web App", "Mobile App", "React JS", "Next JS","UI/UX" ].map(
             (item, i) => (
               <div
@@ -41,8 +42,9 @@ const Projects = () => {
             )
           )}
         </div>
+        </div>
 
-        <div className="flex flex-row justify-center mt-10 flex-wrap gap-10">
+        <div className="flex flex-col lg:flex-row justify-center items-center  mt-10 flex-wrap gap-10">
           {filterWork.map((project, i) => (
             <ProjectBox
               key={i}
@@ -52,7 +54,7 @@ const Projects = () => {
               projectSlider={project.projectSlider}
               description={project.description}
               projectUrl={project.projectUrl}
-              githubUrl={project.githubUrl}
+              github={project.github}
             />
           ))}
         </div>

@@ -8,10 +8,10 @@ import Info from "@/components/Info";
 
 const Service = () => {
   return (
-    <section className="bg-bg_secondary w-[630px] lg:w-full lg:h-[120vh] h-[310vh] pt-10" id="service">
+    <section className="bg-bg_secondary w-[630px] lg:w-full lg:h-[120vh] h-[290vh] pt-10" id="service">
       <div className="lg:flex justify-center items-center"><Info /></div>
       <div className="mt-14">
-        <h1 className="text-3xl text-center font-[600] ">Awesome Service</h1>
+        <h1 className="text-3xl text-center font-[600]">Awesome Service</h1>
         <p className="text-textColor mt-5 text-center text-xl px-3">
           Obviously I'm a Front-End Developer. Experienced with all stages of
           the development cycle for dynamic web projects.

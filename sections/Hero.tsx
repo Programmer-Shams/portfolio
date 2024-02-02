@@ -8,7 +8,7 @@ import Navbar from "@/components/Navbar/Navbar";
 
 const Hero = () => {
   return (
-    <div className="bg-bg-hero w-[630px] lg:w-full border-2 border-blue-500 h-screen lg:h-[47rem] bg-cover bg-no-repeat">
+    <div className="bg-bg-hero w-[630px] lg:w-full h-screen lg:h-[47rem] border bg-cover bg-no-repeat" id="home">
       <div className="flex flex-col items-center justify-center mt-64 lg:mt-44">
         <Image
           src="/assets/images/shams.jpg"

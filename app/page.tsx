@@ -15,10 +15,7 @@ const Home = () => {
   return (
     <main className="app">
       <Navbar />
-      <section className="">
-        <Hero />
-      </section>
-      {/* <About /> */}
+      <Hero />
       <Service />
       {/* <Experience /> */}
       <Work />

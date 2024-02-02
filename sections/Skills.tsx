@@ -3,24 +3,24 @@ import SkillsCard from "../components/SkillsCard";
 
 const Skills = () => {
   return (
-    <section className="w-full bg-white h-[80vh]">
-      <h1 className="text-3xl font-[600] mt-10 text-center px-2">Work Expertise</h1>
-      <div className="w-full flex flex-row mt-[6rem] ">
-        <div className="ml-10 w-[40%] relative">
-          <h1 className="text-4xl leading-[50px] mt-20">
+    <section className="bg-white h-[140vh] w-[630px] lg:w-full lg:h-[90vh] pt-10" id="resume">
+      <h1 className="text-3xl text-center font-[600]">Work Expertise</h1>
+      <div className="w-full flex flex-col lg:flex-row lg:mt-[6rem]">
+        <div className="px-10 sm:w-full lg:w-[40%]">
+          <h1 className="text-4xl leading-[50px] mt-16 text-center lg:text-left">
             Let's Explore Popular
             <br />
             <span className="text-secondary">Skills & Experience</span>
-            <p className="text-textColor mt-5 text-base leading-[30px]">
+          </h1>
+          <p className="text-textColor mt-5 text-2xl text-center lg:text-left lg:text-base leading-[40px]">
               As an experienced software developer, I bring expertise across all
               stages of the development cycle for dynamic web projects.I excel
               in using cutting-edge skills and technologies to deliver
               high-performance solutions.
             </p>
-          </h1>
         </div>
 
-        {/* <div className="w-[70%] ml-[20rem] flex items-center gap-10 flex-wrap">
+        <div className="lg:w-[70%] lg:ml-[20rem] flex flex-row items-center justify-center mt-[6.5rem] lg:mt-0 gap-10 flex-wrap">
           {SkillsInfo.map((skill, i) => (
             <SkillsCard
               key={i}
@@ -29,7 +29,7 @@ const Skills = () => {
               BoxText={skill.name}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );
