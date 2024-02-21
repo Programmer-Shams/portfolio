@@ -8,7 +8,7 @@ import Info from "@/components/Info";
 
 const Service = () => {
   return (
-    <section className="bg-bg_secondary w-[630px] sm:w-full lg:h-[97vh] h-full pt-10 pb-16" id="service">
+    <section className="bg-bg_secondary w-[630px] sm:w-full lg:h-[97vh] h-full pb-10 border" id="service">
       <div className="flex md:justify-center"><Info /></div>
       <div className="mt-14">
         <h1 className="text-3xl text-center font-[600]">Awesome Service</h1>

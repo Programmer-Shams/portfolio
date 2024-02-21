@@ -18,7 +18,7 @@ const Projects = () => {
   }
 
   return (
-    <section className="bg-bg_secondary w-[630px] sm:w-full lg:h-[130vh] h-[300rem] pt-10" id="projects">
+    <section className="bg-bg_secondary w-[630px] sm:w-full lg:h-[160vh] h-[300rem] pt-10 border" id="projects">
       <div className="pt-10">
         <h1 className="text-3xl text-center font-[600]">
           My Creative <span className="text-secondary">Portfolio</span>
