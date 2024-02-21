@@ -34,7 +34,7 @@ const Contact = () => {
     // });
   };
   return (
-    <section className="bg-white h-full w-[500px] md:w-full lg:w-full ml-[4rem] md:ml-0 py-10 border-2 border-r-green-700" id="contact">
+    <section className="bg-white h-full w-[500px] md:w-full lg:w-full ml-[4rem] md:ml-0 py-10" id="contact">
       <h1 className="text-3xl text-center font-[600] mt-10">Contact Me</h1>
       <p className="text-textColor mt-5 text-2xl lg:text-base text-center leading-[30px]">
         Have a question or want to work together?
