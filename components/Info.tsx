@@ -15,10 +15,10 @@ const Info = () => {
     </div>
 
     <div className=" mt-3">
-      <h1 className="text-3xl lg:text-2xl my-3">
+      <h1 className="text-3xl md:text-2xl my-3">
         I Am <span className="text-secondary font-bold">Front-End Developer</span>
       </h1>
-      <p className="text-textColor text-2xl mt-3 leading-[2.36rem] lg:leading-normal lg:text-[18px] md:text-[18px]">
+      <p className="text-textColor text-2xl mt-3 leading-[2.36rem] md:leading-normal md:text-[18px]">
         Obviously I'm a Web Designer. Web Developer with over 3 years of
         experience. Experienced with all stages of the development cycle for
         dynamic web projects. The as opposed to using 'Content here, content

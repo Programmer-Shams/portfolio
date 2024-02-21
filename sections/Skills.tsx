@@ -3,7 +3,7 @@ import SkillsCard from "../components/SkillsCard";
 
 const Skills = () => {
   return (
-    <section className="bg-white h-full my-8 w-[630px] sm:w-full lg:h-[100vh] pt-14" id="resume">
+    <section className="bg-white h-full my-8 w-[630px] sm:w-full lg:h-[90vh] pt-14" id="resume">
       <h1 className="text-3xl text-center font-[600]">Work Expertise</h1>
       <div className="w-full flex flex-col lg:flex-row lg:mt-[6rem]">
         <div className="px-10 sm:w-full lg:w-[55%]">

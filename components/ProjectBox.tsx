@@ -51,10 +51,10 @@ const ProjectBox = ({
         <div className="flex items-center justify-center mt-3">
           <Image src={imgUrl} alt="projectimage" width={260} height={280} className="w-[500px] h-[310px] lg:w-[260px] lg:h-[160px]" />
         </div>
-        <p className="font-bold p-2 text-3xl lg:text-lg">{name}</p>
+        <p className="font-bold p-2 text-3xl md:text-lg">{name}</p>
         <div className="flex flex-row justify-between p-2 mt-5 items-center">
           <button
-            className="bg-secondary text-white w-[120px] h-[50px] lg:w-[85px] lg:h-[30px] text-[1.7rem] rounded-lg font-bold items-center justify-center flex text-3xl lg:text-base px-5 cursor-pointer"
+            className="bg-secondary text-white w-[120px] h-[50px] md:w-[85px] md:h-[30px] text-[1.7rem] rounded-lg font-bold items-center justify-center flex text-3xl md:text-base px-5 cursor-pointer"
             onClick={handleOpenProject}
           >
             Explore 
@@ -68,7 +68,7 @@ const ProjectBox = ({
                 width={25}
                 height={25}
                 alt="iconimage"
-                className="rounded-full lg:h-[18px] lg:w-[20px] h-[30px] w-[30px]"
+                className="rounded-full md:h-[18px] md:w-[20px] h-[30px] w-[30px]"
               />
             ))}
           </div>
