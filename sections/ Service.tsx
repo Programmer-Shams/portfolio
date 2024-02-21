@@ -8,8 +8,8 @@ import Info from "@/components/Info";
 
 const Service = () => {
   return (
-    <section className="bg-bg_secondary w-[630px] lg:w-full lg:h-[120vh] h-[290vh] pt-10" id="service">
-      <div className="lg:flex justify-center items-center"><Info /></div>
+    <section className="bg-bg_secondary w-[630px] sm:w-full lg:h-[97vh] h-full pt-10 pb-16" id="service">
+      <div className="flex justify-center items-center"><Info /></div>
       <div className="mt-14">
         <h1 className="text-3xl text-center font-[600]">Awesome Service</h1>
         <p className="text-textColor mt-5 text-center text-xl px-3">

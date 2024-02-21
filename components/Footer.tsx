@@ -4,7 +4,7 @@ import { IconBaseProps } from "react-icons";
 
 const Footer = () => {
   return (
-    <footer className="lg:w-full lg:h-[50vh] w-[630px] h-[50vh] bg-bg_secondary relative">
+    <footer className="sm:w-full lg:h-[50vh] w-[630px] h-[50vh] bg-bg_secondary relative">
       <h1 className="text-3xl text-center font-[600] pt-10">Shams</h1>
       <p className="text-black mt-16 text-base text-center leading-[30px] px-4 lg:px-0">
         Obviously I'm a Web Designer. Experienced with all stages of the

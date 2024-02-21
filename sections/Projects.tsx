@@ -18,7 +18,7 @@ const Projects = () => {
   }
 
   return (
-    <section className="bg-bg_secondary w-[630px] lg:w-full lg:h-[130vh] h-[300rem] pt-10" id="projects">
+    <section className="bg-bg_secondary w-[630px] sm:w-full lg:h-[130vh] h-[300rem] pt-10" id="projects">
       <div className="pt-10">
         <h1 className="text-3xl text-center font-[600]">
           My Creative <span className="text-secondary">Portfolio</span>
@@ -44,7 +44,7 @@ const Projects = () => {
         </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-center items-center  mt-10 flex-wrap gap-10">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center mt-10 gap-10">
           {filterWork.map((project, i) => (
             <ProjectBox
               key={i}

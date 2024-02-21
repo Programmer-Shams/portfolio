@@ -34,7 +34,7 @@ const Contact = () => {
     // });
   };
   return (
-    <section className="bg-white h-[110vh] w-[500px] lg:w-full lg:h-[120vh] ml-[4rem] lg:ml-0 pt-10" id="contact">
+    <section className="bg-white h-full w-[500px] lg:w-full ml-[4rem] lg:ml-0 py-10" id="contact">
       <h1 className="text-3xl text-center font-[600] mt-10">Contact Me</h1>
       <p className="text-textColor mt-5 text-2xl lg:text-base text-center leading-[30px]">
         Have a question or want to work together?
@@ -80,7 +80,7 @@ const Contact = () => {
             </div>
             <div>
               <textarea
-                className="text-xl lg:text-base"
+                className="text-xl lg:text-base resize-none"
                 placeholder="Your Message"
                 value={message}
                 name="message"
