@@ -8,8 +8,8 @@ import Navbar from "@/components/Navbar/Navbar";
 
 const Hero = () => {
   return (
-    <div className="bg-bg-hero w-[630px] sm:w-full h-screen lg:h-[47rem] border bg-cover bg-no-repeat" id="home">
-      <div className="flex flex-col items-center justify-center mt-64 lg:mt-44">
+    <div className="bg-bg-hero w-[630px] sm:w-full h-[135vh]  border-green-600 md:h-[47rem] border-2 bg-cover bg-no-repeat" id="home">
+      <div className="flex flex-col items-center justify-center mt-[16rem] lg:mt-44 border-2 border-red-800">
         <Image
           src="/assets/images/shams.jpg"
           alt="shams"
