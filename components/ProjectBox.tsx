@@ -76,7 +76,7 @@ const ProjectBox = ({
       </div>
       <div>
         {openProject && (
-          <div className="modal  w-full">
+          <div className="modal sm:bg-[rgba(49,49,49,0.8)]  w-full">
             <div onClick={handleOpenProject} className="overlay" />
             <div className="modal-content  border-2 border-green-500">
               {/* Carousel  */}
