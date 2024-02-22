@@ -3,21 +3,26 @@ import "./Navbar.scss";
 import { NavLinks } from "../../constants";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const pathname = usePathname();
   return (
     <nav className="app__navbar bg-bg_secondary">
       <div className="app__navbar-logo">
         <h1 className=" text-secondary text-3xl lg:text-xl font-bold">Shams</h1>
       </div>
       <ul className="app__navbar-links">
-        {NavLinks.map((item) => (
-          <li key={`link-${item}`} className="app__flex p-text">
+        {NavLinks.map((item) => {
+          const isActive = pathname === item.link;
+          return (
+            <li key={`link-${item}`} className={`app__flex text-[0.8rem]`}>
             <div></div>
             <a href={`#${item.link}`}>{item.name}</a>
-          </li> 
-        ))}
+          </li>
+          )
+        })}
       </ul>
 
       <div className="app__navbar-menu bg-secondary text-white">

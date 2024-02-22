@@ -26,8 +26,8 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex flex-row justify-center items-center gap-4 mt-10">
-        <Button width="150" BtnText="Hire Me" />
-        <Button width="218" BtnText="Download CV" BtnIcon={<FiDownload />} />
+        <Button width="150" BtnText="Hire Me" direct="https://wa.me/09011855909" />
+        <Button width="218" BtnText="Download CV" BtnIcon={<FiDownload />} direct="https://wa.me/09011855909" />
       </div>
     </div>
   );
