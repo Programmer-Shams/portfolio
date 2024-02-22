@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Button from "../components/Button";
 import { GoDownload } from "react-icons/go";
 import { FiDownload } from "react-icons/fi";
+import { IoIosRocket } from "react-icons/io";
 import Navbar from "@/components/Navbar/Navbar";
 
 const Hero = () => {
@@ -26,8 +27,8 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex flex-row justify-center items-center gap-4 mt-10">
-        <Button width="150" BtnText="Hire Me" direct="https://wa.me/09011855909" />
-        <Button width="218" BtnText="Download CV" BtnIcon={<FiDownload />} direct="https://wa.me/09011855909" />
+        <Button width="150" BtnText="Contact Me" direct="https://wa.me/09011855909" BtnIcon={<IoIosRocket />} />
+        <Button width="218" BtnText="Download CV" BtnIcon={<FiDownload />} direct="/resume.pdf" />
       </div>
     </div>
   );

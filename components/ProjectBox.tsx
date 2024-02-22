@@ -18,7 +18,7 @@ type BoxProps = {
   projectSlider: string[];
   description: string;
   projectUrl: string;
-  githubUrl: string;
+  github: string | undefined;
 };
 
 const ProjectBox = ({
@@ -28,7 +28,7 @@ const ProjectBox = ({
   projectSlider,
   description,
   projectUrl,
-  githubUrl
+  github
 }: BoxProps) => {
   const [openProject, setOpenProject] = useState(false);
   const [activeSlide, setActiveSlide] = useState(2);
@@ -115,8 +115,8 @@ const ProjectBox = ({
               <h2 className="text-3xl font-bold">{name}</h2>
               <p className="mt-2 leading-normal">{description}</p>
               <div className="flex flex-row items-center justify-between mt-10">
-                <Link href={projectUrl}  className="bg-secondary w-[100px] h-[40px] text-white rounded-lg font-bold flex flex-row items-center justify-center gap-2">GitHub <span><FaGithub /></span></Link>
-                <Link href={githubUrl} className="bg-secondary w-[100px] h-[40px] text-white rounded-lg font-bold flex flex-row items-center justify-center gap-2">View <span><HiViewfinderCircle /></span></Link>
+                <a href={github}  className="bg-secondary w-[100px] h-[40px] text-white rounded-lg font-bold flex flex-row items-center justify-center gap-2 cursor-pointer">GitHub <span><FaGithub /></span></a>
+                <a href={projectUrl} className="bg-secondary w-[100px] h-[40px] text-white rounded-lg font-bold flex flex-row items-center justify-center gap-2">View <span><HiViewfinderCircle /></span></a>
               </div>
               </div>
             </div>

@@ -11,12 +11,12 @@ interface ButtonProps {
 
 const Button = ({ BtnText, BtnIcon, width = 'auto', direct }: ButtonProps) => {
   return (
-    <Link href={direct}
+    <a href={direct} download={direct === '/resume.pdf'}
       className={`w-${width} bg-secondary py-2 px-4 rounded-lg`}
       style={{ width: width === 'auto' ? 'auto' : `${width}px` }}
     >
       <p className={`text-white text-2xl md:text-base items-center justify-center flex flex-row gap-2 font-[500]`}>{BtnText}<span>{BtnIcon}</span> </p>
-    </Link>
+    </a>
   );
 };
 

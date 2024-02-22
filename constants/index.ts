@@ -218,6 +218,10 @@ export const ProjectInfo = [
     ],
     tag: ["All", "Mobile App"]
   },
+
+
+
+  
   {
     name: "Event Organizer",
     imgUrl: "/assets/images/eventapp.png",

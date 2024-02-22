@@ -54,7 +54,7 @@ const Projects = () => {
               projectSlider={project.projectSlider}
               description={project.description}
               projectUrl={project.projectUrl}
-              github={project.github}
+              github={project.githubUrl}
             />
           ))}
         </div>
