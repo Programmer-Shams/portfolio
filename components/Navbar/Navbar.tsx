@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import { NavLinks } from "../../constants";
+import { NavLinks, SocialLinks } from "../../constants";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { IconBaseProps } from "react-icons";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,6 +26,15 @@ const Navbar = () => {
           )
         })}
       </ul>
+      <div className="flex gap-5">
+        {SocialLinks.map((link, i) => {
+          return (
+            <Link href={link.path} key={i} className="text-secondary text-[18px]">
+              {link.icon({} as IconBaseProps)}
+            </Link>
+          );
+        })}
+      </div>
 
       <div className="app__navbar-menu bg-secondary text-white">
         <HiOutlineMenuAlt3 onClick={() => setToggle(true)} />
@@ -31,7 +42,7 @@ const Navbar = () => {
           <motion.div
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
-            className=" bg-bg_secondary"
+            className="bg-bg_secondary"
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>

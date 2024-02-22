@@ -76,9 +76,9 @@ const ProjectBox = ({
       </div>
       <div>
         {openProject && (
-          <div className="modal">
+          <div className="modal  w-full">
             <div onClick={handleOpenProject} className="overlay" />
-            <div className="modal-content">
+            <div className="modal-content  border-2 border-green-500">
               {/* Carousel  */}
               <div className="w-full h-[350px] rounded-2xl duration-500 bg-contain">
                 <div className="max-w-[1400px] h-full w-full m-auto py-16 px-4 relative group">
