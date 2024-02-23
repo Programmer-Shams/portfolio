@@ -3,6 +3,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdMarkEmailRead } from "react-icons/md";
 import { FiSend } from "react-icons/fi";
 import { sendEmail } from "@/actions/sendEmail";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,11 +22,13 @@ const Contact = () => {
   };
   const handleSubmit = async () => {
     setLoading(true);
-    await sendEmail(formData)
+    await sendEmail(formData);
     // setLoading(false)
   };
   return (
-    <section
+    <motion.section
+      whileInView={{ y: [-200, 100, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 1 }}
       className="bg-white h-full w-[500px] md:w-full lg:w-full ml-[4rem] md:ml-0 py-10"
       id="contact"
     >
@@ -38,7 +41,10 @@ const Contact = () => {
       </h2>
       <div className="items-center justify-center flex flex-col">
         <div className="app__footer-cards">
-          <div className="app__footer-card">
+          <motion.div
+          whileInView={{ x: [400, 100, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 1 }}
+           className="app__footer-card">
             <a
               href="mailto:ssdeen313@gmail.com"
               className="text-xl lg:text-base flex justify-center items-center gap-4"
@@ -46,8 +52,11 @@ const Contact = () => {
               <MdMarkEmailRead className=" text-secondary lg:text-xl text-3xl" />{" "}
               ssdeen313@gmail.com
             </a>
-          </div>
-          <div className="app__footer-card">
+          </motion.div>
+          <motion.div
+          whileInView={{ x: [-400, -100, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 1 }}
+           className="app__footer-card">
             <a
               href="tel: +234 (9011855909)"
               className="text-xl lg:text-base flex justify-center items-center gap-4"
@@ -55,11 +64,14 @@ const Contact = () => {
               <FiPhoneCall className="text-secondary lg:text-xl text-3xl" />{" "}
               +(234) 9011855909
             </a>
-          </div>
+          </motion.div>
         </div>
 
         {!isFormSubmitted ? (
-          <form className="app__footer-form app__flex">
+          <motion.form
+          whileInView={{ y: [-300, 100, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 1 }}
+           className="app__footer-form app__flex">
             <div className="app__flex">
               <input
                 className="text-xl lg:text-base"
@@ -91,21 +103,24 @@ const Contact = () => {
                 onChange={handleChangeInput}
               />
             </div>
-            <button
+            <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileInView={{ x: [-200, 50, 0], opacity: [0, 0, 1] }}
+            transition={{ duration: 0.5 }}
               type="button"
               className="bg-secondary rounded-md flex items-center text-xl lg:text-base gap-3"
               onClick={handleSubmit}
             >
               {!loading ? "Send Message" : "Sending..."} <FiSend />
-            </button>
-          </form>
+            </motion.button>
+          </motion.form>
         ) : (
           <div>
             <h3 className="head-text">Thank you for getting in touch!</h3>
           </div>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

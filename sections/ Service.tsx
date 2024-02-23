@@ -24,6 +24,8 @@ const Service = () => {
             name={service.name}
             icon={service.icon({} as IconBaseProps)}
             content={service.content}
+            motionProps={service.motion}
+            duration={service.duration}
           />
         ))}
       </div>

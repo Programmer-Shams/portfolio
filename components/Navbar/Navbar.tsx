@@ -9,9 +9,15 @@ import { IconBaseProps } from "react-icons";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1})
   const pathname = usePathname();
   return (
-    <nav className="app__navbar bg-bg_secondary">
+    <motion.div
+      animate={{ y: 0, opacity: 1}}
+      transition={{ duration: 0.5, delayChildren: 0.5 }}
+      className="app__navbar bg-bg_secondary"
+    >
+      
       <div className="app__navbar-logo">
         <h1 className=" text-secondary text-3xl lg:text-xl font-bold">Shams</h1>
       </div>
@@ -20,16 +26,20 @@ const Navbar = () => {
           const isActive = pathname === item.link;
           return (
             <li key={`link-${item}`} className={`app__flex text-[0.8rem]`}>
-            <div></div>
-            <a href={`#${item.link}`}>{item.name}</a>
-          </li>
-          )
+              <div></div>
+              <a href={`#${item.link}`}>{item.name}</a>
+            </li>
+          );
         })}
       </ul>
       <div className="flex gap-5">
         {SocialLinks.map((link, i) => {
           return (
-            <Link href={link.path} key={i} className="text-secondary text-[18px]">
+            <Link
+              href={link.path}
+              key={i}
+              className="text-secondary text-[18px]"
+            >
               {link.icon({} as IconBaseProps)}
             </Link>
           );
@@ -57,7 +67,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </div>
-    </nav>
+    </motion.div>
   );
 };
 
