@@ -7,6 +7,7 @@ import { FiDownload } from "react-icons/fi";
 import { IoIosRocket } from "react-icons/io";
 import Navbar from "@/components/Navbar/Navbar";
 import { motion } from "framer-motion";
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
