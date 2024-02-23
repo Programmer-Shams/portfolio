@@ -18,7 +18,7 @@ const Button = ({ BtnText, BtnIcon, width = 'auto', direct }: ButtonProps) => {
       className={`w-${width} bg-secondary py-2 px-4 rounded-lg`}
       style={{ width: width === 'auto' ? 'auto' : `${width}px` }}
     >
-      <p className={`text-white text-2xl md:text-base items-center justify-center flex flex-row gap-2 font-[500]`}>{BtnText}<span>{BtnIcon}</span> </p>
+      <p className={`text-white text-2xl md:text-base items-center justify-center flex flex-row gap-2 font-[400]`}>{BtnText}<span>{BtnIcon}</span> </p>
     </motion.a>
   );
 };

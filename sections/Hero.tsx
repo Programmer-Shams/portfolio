@@ -27,7 +27,7 @@ const Hero = () => {
         whileInView={{x:[-500, -250, 0], opacity: [0, 0, 1]}}
       transition={{duration: 0.9,}}
         >
-          <h1 className="text-white text-4xl lg:text-3xl font-bold mt-5 text-center">
+          <h1 className="text-white text-4xl lg:text-3xl font-semibold mt-5 text-center">
           Here I'm Programmer <br /> Shams{" "}
         </h1>
         <p className="text-white text-center mt-3 text-2xl lg:text-lg">

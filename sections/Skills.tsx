@@ -8,7 +8,7 @@ const Skills = () => {
       className="bg-white h-full my-8 w-[630px] sm:w-full lg:h-[90vh] pt-14"
       id="resume"
     >
-      <h1 className="text-3xl text-center font-[600]">Work Expertise</h1>
+      <h1 className="text-3xl text-center font-[600]">My Skills <span className="text-secondary">Expertise</span></h1>
       <div className="w-full flex flex-col lg:flex-row lg:mt-[6rem]">
         <motion.div
           whileInView={{ x: [-200, 100, 0], opacity: [0, 0, 1] }}

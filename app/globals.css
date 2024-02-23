@@ -16,6 +16,10 @@ body.active-modal {
     margin: 100px auto 0;
     font-size: 18px;
 }
+.black {
+    display: none;
+    color: black;
+}
 
 .modal, .overlay {
     /* width: ; */

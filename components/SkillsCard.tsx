@@ -32,7 +32,7 @@ const SkillsCard = ({ Boximage, BoxText, BoxPercentage, motionProps, duration }:
           className="rounded-full"
         />
       </motion.div>
-      <p className="mt-1 -ml-3 text-base font-bold">{BoxText}</p>
+      <p className="mt-1 -ml-3 text-base font-semibold">{BoxText}</p>
       {/* <p className="absolute">{BoxPercentage}%</p> */}
     </motion.div>
   );

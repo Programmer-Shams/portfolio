@@ -19,13 +19,16 @@ const Navbar = () => {
     >
       
       <div className="app__navbar-logo">
-        <h1 className=" text-secondary text-3xl lg:text-xl font-bold">Shams</h1>
+        <motion.h1
+        whileInView={{ x: [-100, 50, 0]}}
+        transition={{ duration: 0.9 }}
+         className=" text-secondary text-3xl lg:text-xl font-bold">Shams</motion.h1>
       </div>
       <ul className="app__navbar-links">
         {NavLinks.map((item) => {
           const isActive = pathname === item.link;
           return (
-            <li key={`link-${item}`} className={`app__flex text-[0.8rem]`}>
+            <li key={`link-${item}`} className={`app__flex text-[0.8rem] hover:text-secondary`}>
               <div></div>
               <a href={`#${item.link}`}>{item.name}</a>
             </li>
@@ -58,7 +61,7 @@ const Navbar = () => {
             <ul>
               {NavLinks.map((item, i) => (
                 <li key={i}>
-                  <a href={`#${item.link}`} onClick={() => setToggle(false)}>
+                  <a href={`#${item.link}`} onClick={() => setToggle(false)} className="hover:text-secondary">
                     {item.name}
                   </a>
                 </li>
