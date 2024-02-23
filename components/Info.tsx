@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { TypeAnimation } from 'react-type-animation'
+// import { TypeAnimation } from 'react-type-animation'
 
 const Info = () => {
   return (
@@ -22,12 +22,12 @@ const Info = () => {
     <div className=" mt-3">
       <h1 className="text-3xl md:text-2xl my-3">
         I Am 
-        <TypeAnimation
+        {/* <TypeAnimation
           sequence={[' Full-Stack Developer ']}
           speed={50}
           repeat={Infinity}
           className="text-secondary font-bold"
-      />
+      /> */}
       </h1>
       <p className="text-textColor text-2xl mt-3 leading-[2.36rem] md:leading-normal md:text-[18px]">
         Obviously I'm a Web Designer. Web Developer with over 3 years of
