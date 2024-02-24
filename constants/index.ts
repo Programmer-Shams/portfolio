@@ -211,7 +211,7 @@ export const ServicesInfo = [
 export const ProjectInfo = [
   {
     name: "Event Organizer",
-    imgUrl: "/assets/images/eventApp.png",
+    imgUrl: "/assets/images/event.png",
     githubUrl:
       "https://github.com/Programmer-Shams/project_event_organiser-App",
     projectUrl: "https://project-event-organiser-app.vercel.app/",
