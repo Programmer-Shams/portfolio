@@ -46,7 +46,7 @@ const Projects = () => {
               <div
                 key={i}
                 onClick={() => handleWorkFiler(item)}
-                className={`bg-white py-[0.5rem] px-[1rem] rounded-md cursor-pointer`}
+                className={`bg-white py-[0.5rem] px-[1rem] text-xl md:text-base rounded-md cursor-pointer`}
                 style={{
                   backgroundColor: activeFilter === item ? "#017BFF" : "",
                   color: activeFilter === item ? "white" : "black",
