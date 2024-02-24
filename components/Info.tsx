@@ -8,7 +8,7 @@ const Info = () => {
       whileInView={{ x: [-200, 50, 0], opacity: [0, 0, 1] }}
       
       // transition={{ duration: 0.9 }}
-      className="bg-white -mt-[280px] md:-mt-[120px] w-[570px] h-[780px] md:h-[250px] lg:h-[220px] ml-7 md:mx-[40px] md:w-[50rem] lg:w-[80rem] rounded-xl px-8 shadow-lg flex flex-col md:flex-row gap-4  justify-center"
+      className="bg-white -mt-[150px] md:-mt-[120px] w-[570px] h-[780px] md:h-[250px] lg:h-[220px] ml-7 md:mx-[40px] md:w-[50rem] lg:w-[80rem] rounded-xl px-8 shadow-lg flex flex-col md:flex-row gap-4  justify-center"
     >
       <div className="bg-bg_secondary rounded-xl p-4 border-2 md:w-[660px] lg:w-[450px] text-[15px] flex-col gap-3 lg:h-[180px] md:h-[200px] mt-4 lg:mt-3 md:mt-5">
         <h1 className="font-[550] text-2xl md:text-lg py-2 lg:py-1">
