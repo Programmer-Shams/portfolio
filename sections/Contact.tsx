@@ -42,7 +42,7 @@ const Contact = () => {
       <div className="items-center justify-center flex flex-col">
         <div className="app__footer-cards">
           <motion.div
-          // whileInView={{ x: [400, 100, 0], opacity: [0, 0, 1] }}
+          whileInView={{ x: [-200, 100, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 1 }}
            className="app__footer-card">
             <a
@@ -54,7 +54,8 @@ const Contact = () => {
             </a>
           </motion.div>
           <motion.div
-          // whileInView={{ x: [-400, -100, 0], opacity: [0, 0, 1] }}
+          whileInView={{ x: [50, 0], opacity: [0, 0, 1] }}
+          // whileInView={{ x: [-200, 100, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 1 }}
            className="app__footer-card">
             <a
