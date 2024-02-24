@@ -106,7 +106,7 @@ const Contact = () => {
             </div>
             <motion.button
             whileHover={{ scale: 1.1 }}
-            // whileInView={{ x: [-200, 50, 0], opacity: [0, 0, 1] }}
+            whileInView={{ x: [-200, 50, 0], opacity: [0, 0, 1] }}
             transition={{ duration: 0.5 }}
               type="button"
               className="bg-secondary rounded-md flex items-center text-xl lg:text-base gap-3"
