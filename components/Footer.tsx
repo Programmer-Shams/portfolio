@@ -4,12 +4,12 @@ import { IconBaseProps } from "react-icons";
 
 const Footer = () => {
   return (
-    <footer className="sm:w-full lg:h-[50vh] w-[630px] h-[70vh] bg-bg_secondary relative">
+    <footer className="sm:w-full lg:h-[50vh] w-[630px] h-[60vh] bg-bg_secondary relative">
       <h1 className="text-3xl text-center font-[600] pt-10">Shams</h1>
-      <p className="text-black mt-16 text-base text-center leading-[30px] px-4 lg:px-0">
+      <p className="text-black mt-16 text-[20px] md:text-base text-center leading-[32px] px-4 lg:px-0">
         Have a project in mind that requires technical expertise? <br/>
         Obviously I'm a Software Developer, Experienced with all stages of the
-        development cycle for <br /> dynamic web projects.
+        development cycle for dynamic web projects.
       </p>
       <div className="flex gap-3 text-center justify-center mt-6">
         {SocialLinksFooter.map((link, i) => {

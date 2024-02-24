@@ -20,7 +20,7 @@ const Skills = () => {
             <br />
             <span className="text-secondary">Skills & Experience</span>
           </h1>
-          <p className="text-textColor mt-5 text-xl text-center lg:text-left lg:text-lg leading-[40px]">
+          <p className="text-textColor mt-5 text-[23px] leading-[33px] text-center lg:text-left lg:text-lg ">
             As an experienced software developer, I bring expertise across all
             stages of the development cycle for dynamic web projects.I excel in
             using cutting-edge skills and technologies to deliver
