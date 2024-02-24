@@ -5,8 +5,8 @@ import Typewriter from "typewriter-effect";
 const Info = () => {
   return (
     <motion.div
-      whileInView={{ x: [200, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.9 }}
+      // whileInView={{ x: [200, 50, 0], opacity: [0, 0, 1] }}
+      // transition={{ duration: 0.9 }}
       className="bg-white -mt-[180px] md:-mt-[130px] w-[570px] h-[570px] md:h-[250px] lg:h-[220px] ml-7 md:mx-[40px] md:w-[50rem] lg:w-[80rem] rounded-xl px-6 shadow-lg flex flex-col md:flex-row gap-6  justify-center"
     >
       <div className="bg-bg_secondary rounded-xl p-4 border-2 md:w-[660px] lg:w-[450px] text-[15px] flex-col gap-3 lg:h-[180px] md:h-[200px] lg:mt-3 md:mt-5">
@@ -30,7 +30,7 @@ const Info = () => {
       <div className="mt-1">
         <h1 className="text-3xl md:text-2xl my-3">
         <span className=" font-semibold">
-        I'm
+        I'm Shamsudeen Omotoso
         </span>
           <span className="text-secondary font-semibold">
             <Typewriter

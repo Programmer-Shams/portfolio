@@ -13,8 +13,7 @@ const Service = () => {
       <div className="mt-14">
         <h1 className="text-3xl text-center font-[600]">Awesome Service</h1>
         <p className="text-textColor mt-5 text-center text-xl px-3">
-          Obviously I'm a Front-End Developer. Experienced with all stages of
-          the development cycle for dynamic web projects.
+        What service do I provide
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-5">

@@ -42,7 +42,7 @@ const Contact = () => {
       <div className="items-center justify-center flex flex-col">
         <div className="app__footer-cards">
           <motion.div
-          whileInView={{ x: [400, 100, 0], opacity: [0, 0, 1] }}
+          // whileInView={{ x: [400, 100, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 1 }}
            className="app__footer-card">
             <a
@@ -54,7 +54,7 @@ const Contact = () => {
             </a>
           </motion.div>
           <motion.div
-          whileInView={{ x: [-400, -100, 0], opacity: [0, 0, 1] }}
+          // whileInView={{ x: [-400, -100, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 1 }}
            className="app__footer-card">
             <a
@@ -105,7 +105,7 @@ const Contact = () => {
             </div>
             <motion.button
             whileHover={{ scale: 1.1 }}
-            whileInView={{ x: [-200, 50, 0], opacity: [0, 0, 1] }}
+            // whileInView={{ x: [-200, 50, 0], opacity: [0, 0, 1] }}
             transition={{ duration: 0.5 }}
               type="button"
               className="bg-secondary rounded-md flex items-center text-xl lg:text-base gap-3"
