@@ -11,18 +11,23 @@ import Projects from "@/sections/Projects";
 import Skills from "@/sections/Skills";
 // import Work from "@/sections/Work";
 import "./App.scss";
+import "./global.scss";
+import PreLoader from "@/components/Preloader";
 const Home = () => {
   return (
-    <main className="app">
-      <Navbar />
-      <Hero />
-      <Service />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <PreLoader />
+      <main className="app">
+        <Navbar />
+        <Hero />
+        <Service />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 };
 

@@ -9,7 +9,7 @@ import { GrFormView } from "react-icons/gr";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Transition, motion } from "framer-motion";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 type MotionProps = {
@@ -42,6 +42,19 @@ const ProjectBox = ({
 }: BoxProps) => {
   const [openProject, setOpenProject] = useState(false);
   const [activeSlide, setActiveSlide] = useState(2);
+  useEffect(() => {
+    if (openProject) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+    } else {
+      document.body.style.overflow = 'auto'; // Enable scrolling
+    }
+
+    // Cleanup function to reset overflow style when component unmounts
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [openProject]);
+
   const prevSlide = () => {
     const isFirstSlide = activeSlide === 0;
     const newSlide = isFirstSlide ? projectSlider.length - 1 : activeSlide - 1;
@@ -95,7 +108,7 @@ const ProjectBox = ({
       </motion.div>
       <div>
         {openProject && (
-          <div className="modal sm:bg-[rgba(49,49,49,0.8)]  w-full">
+          <div className="modal bg-[rgba(49,49,49,0.8)]  w-full">
             <div onClick={handleOpenProject} className="overlay" />
             <div className="modal-content bg-bg_secondary">
               {/* Carousel  */}
