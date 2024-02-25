@@ -31,7 +31,7 @@ const Hero = () => {
         </h1>
         <p className="text-white text-center mt-3 text-2xl lg:text-lg">
           I'm a Passionate{" "}
-          <span className="text-secondary">Front-End Developer</span>
+          <span className="text-secondary">Software Developer</span>
         </p>
         </motion.div>
         
