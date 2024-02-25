@@ -129,7 +129,7 @@ const ProjectBox = ({
                       onClick={nextSlide}
                     />
                   </div>
-                  <div className="flex top-4 justify-center p-2">
+                  {/* <div className="flex top-4 justify-center p-2">
                     {projectSlider.map((slide, i) => (
                       <div className="text-2xl cursor-pointer">
                         <RxDotFilled
@@ -142,15 +142,15 @@ const ProjectBox = ({
                         />
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
               {/* Details  */}
               <div>
                 <h2 className="text-2xl font-semibold">{name}</h2>
-                <p className="mt-2 leading-normal">{description}</p>
-                <div className="flex flex-row items-center justify-between mt-10">
+                <p className="mt-2 leading-normal text-[20px] md:text-base">{description}</p>
+                <div className="flex flex-row items-center justify-between mt-8">
                   <a
                     href={github}
                     className="bg-secondary w-[100px] h-[40px] text-white rounded-lg font-bold flex flex-row items-center justify-center gap-2 cursor-pointer"

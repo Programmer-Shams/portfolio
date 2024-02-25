@@ -27,8 +27,8 @@ export default function Component() {
             <PenToolIcon className="text-gray-400 h-12 w-12 bg-white rounded-full p-3 shadow-lg" />
             <div className="flex-1">
               <h3 className="text-xl font-semibold">Software Engineer</h3>
-              <p className="text-blue-600">2022 - 2023</p>
-              <p className="text-gray-600">Alx Academy - Front-End Developer</p>
+              <p className="text-blue-600 text-[20px]">2022 - 2023</p>
+              <p className="text-gray-600 text-[20px] md:text-base">Alx Academy - Front-End Developer</p>
               <p className="text-textColor text-[21px] md:text-base">
               I attended ALX's 12-month Software Engineering program, specializing in Front-End Development. 
               I collaborated on different projects like <span className=" text-secondary">Airbnb clone</span>, contributing to the development of dynamic UI interfaces.
@@ -43,8 +43,8 @@ export default function Component() {
             <CodeIcon className="text-gray-400 h-12 w-12 bg-white rounded-full p-3 shadow-lg" />
             <div className="flex-1">
               <h3 className="text-xl font-semibold">Front-End Developer</h3>
-              <p className="text-blue-600">2023</p>
-              <p className="text-gray-600">MalHub - Front-End Intern</p>
+              <p className="text-blue-600 text-[20px]">2023</p>
+              <p className="text-gray-600 text-[20px]">MalHub - Front-End Intern</p>
               <p className="text-textColor text-[21px] md:text-base">
               I functioned as a Front-End Developer Intern at MalHub, where I  build a dynamic web applications.
               I had the priviledge of building 4 full-stack applications using modern web technologies such as <span className=" text-secondary">React NextJS And Typescript</span>, .
@@ -59,8 +59,8 @@ export default function Component() {
             <LayersIcon className="text-gray-400 h-12 w-12 bg-white rounded-full p-3 shadow-lg" />
             <div className="flex-1">
               <h3 className="text-xl font-semibold">Front-End Developer</h3>
-              <p className="text-blue-600">2023 - 2024</p>
-              <p className="text-gray-600">TechnoHacks  - Front-End Intern</p>
+              <p className="text-blue-600 text-[20px]">2023 - 2024</p>
+              <p className="text-gray-600 text-[20px]">TechnoHacks  - Front-End Intern</p>
               <p className="text-textColor text-[21px] md:text-base">
               I worked as an Intern at TechnoHacks, where I learn from industry
                experts and gain real life practical experience, learning how to manage <span className=" text-secondary">scalability</span> and  <span className="text-secondary">Performance Optimization</span> of web Applications .
