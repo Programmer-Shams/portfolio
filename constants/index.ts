@@ -175,7 +175,7 @@ export const SkillsInfo = [
   },
   {
     name: "GraphQL",
-    imgUrl: "/assets/images/graphql.png",
+    imgUrl: "/assets/images/graph.png",
     percentage: 80,
     motion: { y: [-350, 50, 0], opacity: [0, 0, 1] },
     duration: { duration: 3.3 },

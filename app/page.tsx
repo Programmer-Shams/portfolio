@@ -9,7 +9,7 @@ import Experience from "@/sections/Experience";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
 import Skills from "@/sections/Skills";
-import Work from "@/sections/Work";
+// import Work from "@/sections/Work";
 import "./App.scss";
 const Home = () => {
   return (
@@ -17,8 +17,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Service />
-      {/* <Experience /> */}
-      {/* <Work /> */}
+      <Experience />
       <Skills />
       <Projects />
       <Contact />
