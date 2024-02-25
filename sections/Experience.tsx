@@ -22,7 +22,7 @@ export default function Component() {
               <h3 className="text-xl font-semibold">UX Designer</h3>
               <p className="text-blue-600">2015 - 2018</p>
               <p className="text-gray-600">Vivo - Senior Designer</p>
-              <p className="text-gray-500">
+              <p className="text-textColor text-[20px] md:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 malesuada tellus lorem, et condimentum.
               </p>
@@ -35,7 +35,7 @@ export default function Component() {
               <h3 className="text-xl font-semibold">Web Developer</h3>
               <p className="text-blue-600">2012 - 2015</p>
               <p className="text-gray-600">Oppo - HR Manager</p>
-              <p className="text-gray-500">
+              <p className="text-textColor text-[20px] md:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 malesuada tellus lorem, et condimentum.
               </p>
@@ -48,7 +48,7 @@ export default function Component() {
               <h3 className="text-xl font-semibold">Graphic Designer</h3>
               <p className="text-blue-600">2012 - 2010</p>
               <p className="text-gray-600">Apple - Testor</p>
-              <p className="text-gray-500">
+              <p className="text-textColor text-[20px] md:text-base">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 malesuada tellus lorem, et condimentum.
               </p>
