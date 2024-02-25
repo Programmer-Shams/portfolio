@@ -195,7 +195,7 @@ export const ServicesInfo = [
     name: "Mobile Application",
     icon: TbDeviceMobileCode,
     content:
-      "I specialize in creating robust and scalable web applications tailored to meet the unique needs of clients. From intuitive user interfaces to powerful backend functionalities. I craft seamless and responsive experiences. My commitment is to deliver web applications that not only meet but exceed expectations, ensuring optimal performance and user satisfaction.",
+      "As a seasoned specialist in mobile app development using React Native, I excel in creating standout apps. From visually striking interfaces to advanced functionalities like real-time updates and push notifications, I ensure seamless user experiences. My focus is on optimizing performance and security, delivering apps that exceed expectations and leave users thrilled.",
     motion: { y: [250, 50, 0], opacity: [0, 0, 1] },
     duration: { duration: 1.5 },
   },
@@ -203,7 +203,7 @@ export const ServicesInfo = [
     name: "Dynamic CMS Back-End",
     icon: MdDeveloperBoard,
     content:
-      "I specialize in creating robust and scalable web applications tailored to meet the unique needs of clients. From intuitive user interfaces to powerful backend functionalities. I craft seamless and responsive experiences. My commitment is to deliver web applications that not only meet but exceed expectations, ensuring optimal performance and user satisfaction.",
+      "I develop dynamic backend CMS for web and Mobile apps, comprehensive solutions that include robust authentication user management functionalities, content management systems, and  seamless integration with third-party services. From content scheduling to version control and analytics, I provide clients with a complete toolkit to efficiently manage and update their web content while ensuring scalability and security.",
     motion: { y: [-350, -50, 0], opacity: [0, 0, 1] },
     duration: { duration: 2 },
   },
