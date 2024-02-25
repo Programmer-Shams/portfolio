@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
+import {motion} from 'framer-motion'
+import Link from "next/link";
 interface SvgProps extends React.SVGProps<SVGSVGElement> {}
 
 export default function Component() {
   return (
     <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12  md:w-full w-[630px] border-b">
       <div className="flex flex-col md:flex-row justify-between gap-8 pt-5  w-full">
-        <div className="space-y-2 w-full py-20 md:py-0 px-10 sm:w-full lg:w-[55%] md:w-[30%] justify-center flex flex-col bg-bg_secondary rounded-lg">
+        <motion.div
+        whileInView={{ x: [-200, 50, 0], opacity: [0, 0, 1] }}
+         className="space-y-1 w-full py-20 md:py-0 px-10 sm:w-full lg:w-[55%] md:w-[30%] justify-center flex gap-5 flex-col bg-bg_secondary rounded-lg  md:h-[600px]">
           <h2 className="text-3xl font-semibold text-center md:text-left">Work Participation</h2>
           <p className="text-textColor mt-7 text-[23px] leading-[30px] text-center lg:text-left  lg:text-[17px] lg:leading-[25px]">
           Take a trip through my career, where I've not only paved the
@@ -13,47 +17,56 @@ export default function Component() {
             From coding in the late hours to collaborating with talented teams,
             my career has been a dynamic adventure filled with growth and innnovation.</span>
           </p>
-          <Button className="bg-blue-600 text-white w-[100px] hidden md:block ">See More</Button>
-        </div>
+          <a href='#projects' className=" bg-secondary p-2 rounded-md text-center text-white w-[100px] hidden md:block ">See More</a>
+        </motion.div>
         <div className="space-y-8 w-full px-5 md:w-[50%]">
-          <div className="flex items-center space-x-4">
+          <motion.div
+           whileInView={{ y: [-350, -50, 0], opacity: [0, 0, 1] }}
+           transition={{ duration: 0.5 }}
+           className="flex items-center space-x-4">
             <PenToolIcon className="text-gray-400 h-12 w-12 bg-white rounded-full p-3 shadow-lg" />
             <div className="flex-1">
-              <h3 className="text-xl font-semibold">UX Designer</h3>
-              <p className="text-blue-600">2015 - 2018</p>
-              <p className="text-gray-600">Vivo - Senior Designer</p>
-              <p className="text-textColor text-[20px] md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                malesuada tellus lorem, et condimentum.
+              <h3 className="text-xl font-semibold">Software Engineer</h3>
+              <p className="text-blue-600">2022 - 2023</p>
+              <p className="text-gray-600">Alx Academy - Front-End Developer</p>
+              <p className="text-textColor text-[21px] md:text-base">
+              I attended ALX's 12-month Software Engineering program, specializing in Front-End Development. 
+              I collaborated on different projects like <span className=" text-secondary">Airbnb clone</span>, contributing to the development of dynamic UI interfaces.
               </p>
             </div>
-          </div>
+          </motion.div>
           <hr className="border-t border-gray-200" />
-          <div className="flex items-center space-x-4">
+          <motion.div
+          whileInView={{ y: [-350, -50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.8 }}
+           className="flex items-center space-x-4">
             <CodeIcon className="text-gray-400 h-12 w-12 bg-white rounded-full p-3 shadow-lg" />
             <div className="flex-1">
-              <h3 className="text-xl font-semibold">Web Developer</h3>
-              <p className="text-blue-600">2012 - 2015</p>
-              <p className="text-gray-600">Oppo - HR Manager</p>
-              <p className="text-textColor text-[20px] md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                malesuada tellus lorem, et condimentum.
+              <h3 className="text-xl font-semibold">Front-End Developer</h3>
+              <p className="text-blue-600">2023</p>
+              <p className="text-gray-600">MalHub - Front-End Intern</p>
+              <p className="text-textColor text-[21px] md:text-base">
+              I functioned as a Front-End Developer Intern at MalHub, where I  build a dynamic web applications.
+              I had the priviledge of building 4 full-stack applications using modern web technologies such as <span className=" text-secondary">React NextJS And Typescript</span>, .
               </p>
             </div>
-          </div>
+          </motion.div>
           <hr className="border-t border-gray-200" />
-          <div className="flex items-center space-x-4">
+          <motion.div
+          whileInView={{ y: [-350, -50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 1.1 }}
+           className="flex items-center space-x-4">
             <LayersIcon className="text-gray-400 h-12 w-12 bg-white rounded-full p-3 shadow-lg" />
             <div className="flex-1">
-              <h3 className="text-xl font-semibold">Graphic Designer</h3>
-              <p className="text-blue-600">2012 - 2010</p>
-              <p className="text-gray-600">Apple - Testor</p>
-              <p className="text-textColor text-[20px] md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                malesuada tellus lorem, et condimentum.
+              <h3 className="text-xl font-semibold">Front-End Developer</h3>
+              <p className="text-blue-600">2023 - 2024</p>
+              <p className="text-gray-600">TechnoHacks  - Front-End Intern</p>
+              <p className="text-textColor text-[21px] md:text-base">
+              I worked as an Intern at TechnoHacks, where I learn from industry
+               experts and gain real life practical experience, learning how to manage <span className=" text-secondary">scalability</span> and  <span className="text-secondary">Performance Optimization</span> of web Applications .
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="flex justify-center lg:justify-end">
           <Button className="text-blue-600 bg-transparent"></Button>

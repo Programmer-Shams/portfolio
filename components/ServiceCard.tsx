@@ -30,15 +30,15 @@ const ServiceCard = ({ name, icon, content, motionProps, duration }: ServiceCard
       <p className="sm:leading-7 text-textColor text-2xl sm:text-base">
         {content}
       </p>
-      <Link
-        href="/projects"
+      <a
+        href='#projects'
         className="text-secondary text-2xl lg:text-base flex flex-row items-center mt-5"
       >
         Explore projects
         <span>
           <FaAngleRight />
         </span>
-      </Link>
+      </a>
     </motion.div>
   );
 };

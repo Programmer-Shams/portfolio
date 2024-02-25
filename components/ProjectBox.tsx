@@ -97,7 +97,7 @@ const ProjectBox = ({
         {openProject && (
           <div className="modal sm:bg-[rgba(49,49,49,0.8)]  w-full">
             <div onClick={handleOpenProject} className="overlay" />
-            <div className="modal-content">
+            <div className="modal-content bg-bg_secondary">
               {/* Carousel  */}
               <div className="w-full h-[350px] rounded-2xl duration-500 bg-contain">
                 <div className="max-w-[1400px] h-full w-full m-auto py-16 px-4 relative group">
@@ -135,7 +135,7 @@ const ProjectBox = ({
 
               {/* Details  */}
               <div>
-                <h2 className="text-3xl font-bold">{name}</h2>
+                <h2 className="text-2xl font-semibold">{name}</h2>
                 <p className="mt-2 leading-normal">{description}</p>
                 <div className="flex flex-row items-center justify-between mt-10">
                   <a
