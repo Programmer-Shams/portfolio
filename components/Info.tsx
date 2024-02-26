@@ -29,7 +29,7 @@ const Info = () => {
       </div>
 
       <div className="mt-1">
-        <h1 className="text-3xl md:text-2xl mt-2 lg:my-3">
+        <h1 className="text-3xl md:text-2xl mt-2 lg:my-2">
         <span className=" font-semibold">
         I'm Shamsudeen Omotoso
         </span>
