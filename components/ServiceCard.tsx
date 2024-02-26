@@ -23,16 +23,16 @@ const ServiceCard = ({ name, icon, content, motionProps, duration }: ServiceCard
     <motion.div
       whileInView={motionProps}
       transition={duration}
-      className="bg-white p-10 w-[560px] lg:w-[450px] rounded-xl lg:h-[450px] mt-10 shadow-xl"
+      className="box bg-white p-10 w-[560px] lg:w-[450px] rounded-xl  mt-10 shadow-xl"
     >
       <p className="text-secondary text-4xl">{icon}</p>
-      <h1 className="font-semibold text-3xl sm:text-2xl my-3">{name}</h1>
-      <p className="sm:leading-7 text-textColor text-2xl sm:text-base">
+      <h1 className="font-semibold text-3xl sm:text-2xl mt-2">{name}</h1>
+      <p className="sm:leading-7 text-textColor text-2xl sm:text-[16px]">
         {content}
       </p>
       <a
         href='#projects'
-        className="text-secondary text-2xl lg:text-base flex flex-row items-center mt-2"
+        className="text-secondary text-2xl lg:text-base flex flex-row items-center mt-2 right"
       >
         Explore projects
         <span>

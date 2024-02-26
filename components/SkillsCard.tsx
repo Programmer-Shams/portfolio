@@ -9,7 +9,7 @@ type MotionProps = {
 interface CardProps {
   Boximage: string;
   BoxText: string;
-  BoxPercentage: number;
+  BoxPercentage?: number;
   motionProps: MotionProps | undefined 
   duration: Transition | undefined;
 }
@@ -19,7 +19,7 @@ const SkillsCard = ({ Boximage, BoxText, BoxPercentage, motionProps, duration }:
     whileInView={motionProps}
     transition={duration}
      className="w-[100px] text-center items-center justify-center relative">
-      <p className="absolute right-2 bg-[#E2EEFB] text-secondary text-[12px] font-semibold w-[2.2rem] p-[1px] h-[18px] rounded-md items-center">{BoxPercentage}%</p>
+      {/* <p className="absolute right-2 bg-[#E2EEFB] text-secondary text-[12px] font-semibold w-[2.2rem] p-[1px] h-[18px] rounded-md items-center">{BoxPercentage}%</p> */}
       <motion.div 
       // whileInView={motionProps}
       // transition={duration}

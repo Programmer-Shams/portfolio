@@ -3,59 +3,76 @@
 @tailwind utilities;
 
 .hover {
-    /* @apply hover:; */
+  /* @apply hover:; */
 }
 
 body.active-modal {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .btn-modal {
-    padding: 10px 20px;
-    display: block;
-    margin: 100px auto 0;
-    font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
 }
 .black {
-    display: none;
-    color: black;
+  display: none;
+  color: black;
 }
 
-.modal, .overlay {
-    /* width: ; */
-    /* height: 100vh; */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
+.modal,
+.overlay {
+  /* width: ; */
+  /* height: 100vh; */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
 }
 
 .overlay {
-    /* background: rgba(49,49,49,0.8); */
+  /* background: rgba(49,49,49,0.8); */
 }
 .modal-content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    padding: 14px 28px;
-    border-radius: 3px;
-    width: 600px;
-    min-width: 300px;
-    margin-top: 6rem;
-    border-radius: 2%;
-    display: flex;
-    flex-direction: column;
-    height: 680px;
-    position: fixed;
-
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  padding: 14px 28px;
+  border-radius: 3px;
+  width: 600px;
+  min-width: 300px;
+  margin-top: 6rem;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  height: 680px;
+  position: fixed;
 }
 
 .close-modal {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 7px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+.contents {
+  color: green;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1218px) {
+  .box {
+    height: 530px;
+    /* margin-top: 5px; */
+  }
+  .right {
+    display: none;
+  }
+  .text {
+    display: none;
+  }
 }

@@ -203,7 +203,7 @@ export const ServicesInfo = [
     name: "Dynamic CMS Back-End",
     icon: MdDeveloperBoard,
     content:
-      "I develop dynamic backend CMS for web and Mobile apps, comprehensive solutions that include robust authentication user management functionalities, content management systems, and  seamless integration with third-party services. From content scheduling to version control and analytics, I provide clients with a complete toolkit to efficiently manage and update their web content while ensuring scalability and security.",
+      "I develop dynamic backend CMS for web apps, solutions that include robust authentication user management functionalities, content management systems, and  seamless integration with third-party services. I provide clients with a complete toolkit to efficiently manage and update their web content while ensuring scalability and security.",
     motion: { y: [-350, -50, 0], opacity: [0, 0, 1] },
     duration: { duration: 2 },
   },
@@ -317,7 +317,7 @@ export const ProjectInfo = [
     name: "AI  Article Summarizer",
     imgUrl: "/assets/images/artilce1.png",
     description:
-      "I developed a web app using React.js, Redux Toolkit, and Tailwind CSS, enabling users to summarize articles with one click via the OpenAI model. It boasts a modern interface, intuitive user experience, and features like URL-based summary generation, local storage for history saving, and copy to clipboard functionality. Utilizing Redux Toolkit Query, advanced API requests are made conditionally for optimized data management. The app emphasizes robust code architecture and reusability for scalability and maintenance.",
+      "I built a web app with React.js, Redux Toolkit, and Tailwind CSS for instant article summarization using the OpenAI model. It offers a modern interface, intuitive UX, and key features like URL-based summarization, history saving, and one-click copy to clipboard. Advanced API requests are managed efficiently with Redux Toolkit Query.",
     github: "https://github.com/Programmer-Shams/project_AI_Article-Summarizer",
     projectUrl: "https://project-ai-article-summarizer.vercel.app",
     projectStackIcons: [
@@ -328,8 +328,8 @@ export const ProjectInfo = [
     projectSlider: [
       { url: "/assets/images/artilce1.png" },
       { url: "/assets/images/artilce2.png" },
+      { url: "/assets/images/artilce1.png" },
     ],
-    
     tag: ["All", "React JS"],
     motion: { y: [-350, -50, 0], opacity: [0, 0, 1] },
     duration: { duration: 1 },

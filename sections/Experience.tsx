@@ -31,7 +31,7 @@ export default function Component() {
               <p className="text-gray-600 text-[20px] md:text-base">Alx Academy - Front-End Developer</p>
               <p className="text-textColor text-[21px] md:text-base">
               I attended ALX's 12-month Software Engineering program, specializing in Front-End Development. 
-              I collaborated on different projects like <span className=" text-secondary">Airbnb clone</span>, contributing to the development of dynamic UI interfaces.
+              Where I collaborated on different projects like <span className=" text-secondary">Airbnb clone</span>, contributing to the development of dynamic UI interfaces.
               </p>
             </div>
           </motion.div>

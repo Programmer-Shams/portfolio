@@ -33,7 +33,7 @@ const Skills = () => {
             <SkillsCard
               key={i}
               Boximage={skill.imgUrl}
-              BoxPercentage={skill.percentage}
+              // BoxPercentage={skill.percentage}
               BoxText={skill.name}
               motionProps={skill.motion}
               duration={skill.duration}

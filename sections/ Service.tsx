@@ -12,7 +12,7 @@ const Service = () => {
       <div className="flex md:justify-center"><Info /></div>
       <div className="mt-14">
         <h1 className="text-3xl text-center font-[600]">Awesome Service</h1>
-        <p className="text-textColor mt-5 text-center text-xl px-3">
+        <p className="text-textColor mt-5 text-center text-xl px-3 text">
         What service do I provide
         </p>
       </div>
